@@ -1,0 +1,24 @@
+{
+  "load_extensions": {
+    "nbextensions_configurator/config_menu/main": true,
+    "contrib_nbextensions_help_item/main": true,
+    "collapsible_headings/main": true,
+    "exercise2/main": true,
+    "scratchpad/main": true,
+    "codefolding/main": true,
+    "comment-uncomment/main": true,
+    "highlighter/highlighter": true,
+    "toc2/main": true,
+    "varInspector/main": true,
+    "exercise/main": true,
+    "spellchecker/main": true
+  },
+  "Notebook": {
+    "Toolbar": true
+  },
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": true
+    }
+  }
+}

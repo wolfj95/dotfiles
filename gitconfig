@@ -1,0 +1,8 @@
+[credential]
+	helper = osxkeychain
+[user]
+	name = Jacob Wolf
+	email = jacob.h.wolf@gmail.com
+[include]
+        path = ~/.gitconfig_local
+

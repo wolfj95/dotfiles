@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.atom: atom
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.gitconfig: gitconfig
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+
+- create:
+    - ~/.vim/undodir
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
