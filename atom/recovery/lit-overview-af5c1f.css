@@ -1,0 +1,362 @@
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Sanchez', serif;
+font-family: 'Arvo', serif;*/
+
+body {
+    /* height: 1200px; */
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    color: #37424A;
+    margin: 0px;
+}
+
+h1 {
+    font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", helvetica, serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+p {
+    font-family: arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.learning-sciences p {
+    color: white;
+}
+
+.learning-sciences h3 {
+    color: #FDE047;
+}
+
+text {
+    font-family: arial, sans-serif;
+}
+
+.venn-diagram text {
+    fill: white;
+}
+
+.edtech-definition p {
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.header a:link,
+.header a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    padding: 25px;
+    background: #007934;
+    z-index: 1;
+}
+
+.header-buffer {
+    height: 100px;
+}
+
+.menu {
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.menu > li {
+    display: inline;
+    margin-right: 50px;
+    font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", helvetica, serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.menu > li:last-of-type {
+    margin-right: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > span {
+    z-index: 3;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+.features-menu {
+    display: none;
+}
+
+.dropdown:hover .features-menu {
+    display: flex;
+    flex-direction: column;
+    background: #47a95f;
+    border-radius: 5px;
+    padding-top: 60px;
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    z-index: 2;
+}
+
+.features-menu li {
+    list-style: none;
+    border-bottom: 1px solid #FFF;
+
+    padding: 0 40px 10px 20px;
+    margin: 10px;
+
+    font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", helvetica, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.features-menu li:last-of-type {
+    border-bottom: none;
+}
+
+.content {
+}
+
+#overview {
+    text-align: center;
+    padding: 20px;
+}
+
+#scroll {
+  position: relative;
+}
+
+.scroll__graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  width: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: -5;
+
+  /* uncomment to debug */
+  /* border: 1px solid green; */
+}
+
+.scroll__graphic.is-fixed {
+  position: fixed;
+}
+
+.scroll__graphic.is-bottom {
+  bottom: 0;
+  top: auto;
+}
+
+.scroll__graphic .chart {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  /* uncomment to debug */
+  /* border: 1px solid blue */
+}
+
+.scroll__text {
+  padding: 0 1rem;
+  /* max-width: 30%; */
+}
+
+.step {
+    /* uncomment to debug */
+    /* border: 1px solid red */
+}
+
+.edtech-definition {
+    display: table;
+    table-layout: fixed;
+    /* vertical-align: center; */
+    height: 100%;
+    width: 100%;
+    opacity: 1;  /*opacity is always 1 so text always shows and doesn't flash*/
+    /* padding: 1rem; */
+}
+
+.left-venn {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;    /*centers text in cell*/
+}
+
+.left-venn > p {
+    padding: 10px;
+    text-align: center;
+    /* background: #D6E9FE;
+    border-radius: 5px; */
+}
+
+.under-venn {
+    display: table-cell;
+    text-align: center;
+    /* vertical-align: middle; */  /*not centered to avoid graphic*/
+}
+
+.under-venn > p {
+    padding: 10px;
+    text-align: center;
+    background: #007934;
+    border-radius: 5px;
+    color: white;
+}
+
+.right-venn {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;   /*centers text in cell*/
+}
+
+.right-venn > p {
+    padding: 10px;
+    text-align: center;
+    /* background: #D6E9FE;
+    border-radius: 5px; */
+}
+
+.learning-sciences {
+    float: left;
+    /* margin: 0 1.5%; */
+    width: 51%;
+    height: 100%;
+    /* padding: 20px; */
+}
+
+.learning-sciences.section-intro {
+    display: table;
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#skinner-video {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    length:100%;
+    z-index: -1;
+}
+
+.learning-approach {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#teacher > rect {
+    rx: 5px;
+    ry: 5px;
+}
+
+#p21 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.considerations {
+    display: table;
+    table-layout: fixed;
+    /* vertical-align: center; */
+    height: 100%;
+    width: 100%;
+    opacity: 1;  /*opacity is always 1 so text always shows and doesn't flash*/
+    /* padding: 1rem; */
+}
+
+.left-lists {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;    /*centers text in cell*/
+}
+
+.left-lists > p {
+    padding: 10px;
+    text-align: left;
+    /* background: #D6E9FE;
+    border-radius: 5px; */
+}
+
+.under-lists {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.under-lists > p {
+    padding: 10px;
+    text-align: center;
+}
+
+.right-lists {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;   /*centers text in cell*/
+}
+
+.right-lists > p {
+    padding: 10px;
+    text-align: left;
+    /* background: #D6E9FE;
+    border-radius: 5px; */
+}
+
+.consideration-boxes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.consideration-boxes text {
+    fill: white;
+}
+
+.step.is-active {
+    opacity: 1;
+}

@@ -1,9 +1,11 @@
 "*":
   core:
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
   editor:
-    fontSize: 20
+    tabLength: 4
   "exception-reporting":
-    userId: "4703f286-3f56-4660-9c41-689916997e07"
+    userId: "0913fbd4-9d19-4b40-8e89-16df7199bc9d"
+  "tree-view": {}
   welcome:
     showOnStartup: false

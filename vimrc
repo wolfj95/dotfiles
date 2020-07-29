@@ -89,13 +89,16 @@ set shiftwidth=4
 set softtabstop=4 "number of spaces in tab when editing
 set autoindent  "copy indent from current line whens tarting a new line
 
+" set smart indenting based on filetype
+filetype plugin indent on
+
 " set copy and paste to OS clipboard to standard cmd-c cmd-v
 vnoremap <C-c> :w !pbcopy<CR><CR>
 noremap <C-v> :r !pbpaste<CR><CR>
 
 " color schemes
 "let g:molokai_original = 1
-colorscheme molokai
+" colorscheme space_vim_theme
 
 
 " Undo
